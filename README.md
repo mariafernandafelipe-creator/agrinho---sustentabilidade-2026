@@ -1,9 +1,19 @@
+  agrinho-app-solo/
+  index.html
+  style.css
+  script.js
+  README.md
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <title>AgroSolo Consciente</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
     <header class="topbar">
         <div class="logo">
             <span class="logo-icon">A</span>
@@ -164,18 +174,23 @@
     --transition-fast: 0.2s ease;
     --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.7);
 }
+
 /* RESET SIMPLES */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: radial-gradient(circle at top, #0f172a 0, #020617 45%, #000 100%);
     color: var(--text-main);
     min-height: 100vh;
 }
+
+/* TOPO */
+
 .topbar {
     position: sticky;
     top: 0;
@@ -473,8 +488,7 @@ main {
     .section h1 {
         font-size: 26px;
     }
-}
-function abrirFormularioArea() {
+    function abrirFormularioArea() {
     const form = document.getElementById("formSolo");
     if (form) {
         window.location.hash = "#analise";
